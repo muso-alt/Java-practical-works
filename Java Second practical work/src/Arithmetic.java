@@ -13,6 +13,15 @@ public class Arithmetic {
         System.out.println(GetArithmeticResult(firstIntElement, secondIntElement, ArithmeticOperators.Multiplication));
         System.out.println(GetArithmeticResult(firstIntElement, secondIntElement, ArithmeticOperators.Division));
         System.out.println(GetArithmeticResult(firstIntElement, secondIntElement, ArithmeticOperators.Modulo));
+
+        var a = firstIntElement;
+        System.out.println("Postfix Increment: " + a--);
+        a = firstIntElement;
+        System.out.println("Prefix Increment: " + --a);
+        a = firstIntElement;
+        System.out.println("Postfix Decrement: " + a--);
+        a = firstIntElement;
+        System.out.println("Prefix Decrement: " + --a);
         sc.close();
     }
 
