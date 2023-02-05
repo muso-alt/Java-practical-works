@@ -1,21 +1,16 @@
-import java.util.Scanner;
+package OOP.Equation;
 
-public class Equation {
+public class RootGet {
+    double a, b, c;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        double a, b, c;
-        double D;
-        System.out.println("Программа решает квадратное уравнение вида:");
-        System.out.println("ax^2 + bx + c = 0");
-        System.out.println("Введите a, b и c:");
-        Scanner in = new Scanner(System.in);
-        a = in.nextDouble();
-        b = in.nextDouble();
-        c = in.nextDouble();
-        D = b * b - 4 * a * c;
+    public RootGet(double a, double b, double c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    public void Calculate(){
+        var D = b * b - 4 * a * c;
         if (D > 0) {
             double x1, x2;
             x1 = (-b - Math.sqrt(D)) / (2 * a);
