@@ -1,9 +1,9 @@
-import ArithmeticalApp.*;;
+import ArithmeticalApp.*;
+import OOP.AddressBook.MyAddressBook;;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        new Arithmetic();
-        new AverageAndMax();
-        new Odds();
+        var addressBook = new MyAddressBook();
+        addressBook.Initialize();
     }
 }
