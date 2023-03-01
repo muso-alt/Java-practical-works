@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.Animals;
 
 public class Dog implements IVoice{
 
