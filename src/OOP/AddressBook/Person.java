@@ -1,18 +1,32 @@
 package OOP.AddressBook;
 
-import java.sql.Date;
-
 public class Person {
-    public String PersonName;
-    public String PersongLastName;
-    public Address PersonsAdress;
-    public int BirthdayDate;
+    private String firstName;
+    private String lastName;
+    private String middleName;
 
-    public Person(String name, String lastName, int birthday, Address address){
-        PersonName = name;
-        PersongLastName = lastName;
-        PersonsAdress = address;
-        BirthdayDate = birthday;
+    public static void main(String[] args) throws Exception {
+        var person = new Person("Muso", "Ismailov", "A");
+        System.out.println(person.toString());
+    }
+
+    public Person(String firstName, String lastName, String middleName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.middleName = middleName;
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(lastName);
+        if (firstName != null) {
+            sb.append(" ").append(firstName.charAt(0)).append(".");
+        }
+        if (middleName != null) {
+            sb.append(middleName.charAt(0)).append(".");
+        }
+        return sb.toString();
     }
 }
 

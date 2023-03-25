@@ -37,7 +37,7 @@ public class Main {
 
         //3
         IRNG rng = new RNGImpl();
-        rng.generate();
+        rng.generate(); 
         rng.anyLuck();
     }
 }
